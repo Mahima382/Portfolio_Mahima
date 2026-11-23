@@ -1,0 +1,33 @@
+/* Design tokens. Change colours and fonts here and every page follows. */
+:root {
+  --bg: #F2F5FA;
+  --surface: #FFFFFF;
+  --ink: #0F1B35;
+  --muted: #55627D;
+  --line: #D8DFEC;
+  --accent: #0A7C93;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #DDF1F5;
+  --warm: #C77A12;
+  --ok: #2DB36F;
+
+  --f-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
+  --f-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --radius: 16px;
+  --maxw: 1120px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A1226; --surface: #111B35; --ink: #E7EDFA; --muted: #9AA8C7; --line: #233052;
+    --accent: #5CCBE0; --accent-ink: #06202A; --accent-soft: #12303E; --warm: #F2B25C;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0A1226; --surface: #111B35; --ink: #E7EDFA; --muted: #9AA8C7; --line: #233052;
+  --accent: #5CCBE0; --accent-ink: #06202A; --accent-soft: #12303E; --warm: #F2B25C;
+  color-scheme: dark;
+}
